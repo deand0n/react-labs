@@ -65,6 +65,7 @@ export default function Header() {
             case 'password':
                 setPasswordDirty(true)
                 break
+            default:
         }
     }
 
@@ -74,7 +75,7 @@ export default function Header() {
 
     return (
         <>
-            <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="/">
                         <img
@@ -102,7 +103,7 @@ export default function Header() {
                             />
                             <Button variant="outline-info">Search</Button>
                         </Form>
-                    <Button className="ms-2" onClick={handleShow}>Login</Button>
+                        <Button className="ms-2" onClick={handleShow}>Login</Button>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
